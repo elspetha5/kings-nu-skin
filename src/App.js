@@ -3,8 +3,6 @@ import logo from "./images/jmk-logo.svg";
 import "./App.css";
 
 function App() {
-  // function
-
   return (
     <div className="container">
       <div className="header">
