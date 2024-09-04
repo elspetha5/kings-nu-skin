@@ -1,6 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
   color: #131313;
+  line-height: 1.45;
 }
 
 .container {
@@ -12,7 +33,6 @@ body {
 
 .header {
   width: 100%;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +41,7 @@ body {
   position: relative;
 
   @media (min-width: 1200px) {
-    padding: 20px 75px;
+    padding: 20px 50px;
   }
 }
 
@@ -53,6 +73,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
+  z-index: 2;
 
   @media (min-width: 640px) {
     font-size: 14px;
@@ -67,17 +88,6 @@ body {
   }
 }
 
-.email {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  text-align: right;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-}
-
 .quote {
   display: flex;
   flex-direction: column;
@@ -89,6 +99,17 @@ body {
   .quoted {
     font-size: 16px;
     margin-top: 10px;
+  }
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  text-align: right;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
